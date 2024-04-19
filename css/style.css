@@ -24,6 +24,20 @@ h4{
   letter-spacing: 0.03em;
   color: var(--main-heading-color);
 }
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  outline: 2px dashed red;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.header {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .header-nav-link {
   font-family: var(--second-family);
   font-weight: 700;
@@ -33,13 +47,14 @@ h4{
   text-decoration: none;
   font-family: var(--second-family);
 }
-
 .logo {
   color: #2196f3;
   text-decoration: none;
 }
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 a {
   text-decoration: none;
@@ -58,9 +73,16 @@ a {
   color: var(--focus-color);
 }
 .section-title{
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+
   background-color: var(--background-color);
+  
 }
 .title {
+  margin-bottom: 30px;
+
   color: var(--main-current-color);
   font-weight: 900;
   font-size: 44px;
@@ -71,6 +93,11 @@ a {
   background-color: var(--background-color);
 }
 .button {
+  padding: 10px 32px;
+  border: 0;
+
+  border-radius: 4px;
+  min-width: 216px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1,87;
@@ -80,7 +107,13 @@ a {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #2196f3;
 }
+.features{
+  padding-top: 94px;
+
+}
 h3 {
+  margin-bottom: 10px;
+
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -95,8 +128,16 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.work-title{
+  padding-bottom: 50px;
+}
 .team-section{
+  padding-bottom: 94px;
+  padding-top: 94px;
   background-color: #F5F4FA;
+}
+.section-team-title{
+  padding-bottom: 50px;
 }
 .section-list-item {
   font-weight: 400;
@@ -111,9 +152,12 @@ h3 {
   letter-spacing: 0.03em;
 }
 footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: var(--background-color);
 }
-footer a{
+footer a{ 
   font-weight: 400;
   font-size: 14px;
   line-height: 1,71;
