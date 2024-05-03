@@ -91,7 +91,7 @@ a {
   text-align: center;
 
   background-color: var(--background-color);
-  
+
 }
 .title {
   margin-bottom: 30px;
@@ -123,6 +123,27 @@ a {
 .features{
   padding-top: 94px;
 
+}
+.main-list{
+  display: flex;
+  gap: 30px;
+}
+.main-list-title{
+  margin-bottom: 10px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+}
+.main-list-paragraph {
+  width: 270px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1, 71;
+  letter-spacing: 0.03em;
 }
 h3 {
   margin-bottom: 10px;
@@ -166,6 +187,12 @@ h3 {
   font-size: 16px;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.team-section-title {
+  margin-top: 30px;
+}
+.team-section-paragraph {
+  margin-top: 10px;
 }
 .footer-adress{
   font-weight: 400;
@@ -229,4 +256,15 @@ footer a{
   flex-wrap: wrap;  
   gap: 3px;
   column-gap: 30px;
+}
+.image-title-items {
+  margin-top: 20px;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.image-paragraph {
+  margin-top: 4px;
 }
