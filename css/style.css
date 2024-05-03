@@ -34,11 +34,19 @@ h4{
   padding-top: 94px;
   padding-bottom: 94px;
 }
+.flex {
+  display: flex;
+}
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
 }
+.header-list {
+  align-items: center;
+  gap: 50px;
+}
 .header-nav-link {
+  margin-right: 93px;
   font-family: var(--second-family);
   font-weight: 700;
   font-size: 26px;
@@ -67,6 +75,11 @@ a {
 .header-list-item a:hover,
 .header-list-item a:focus{
   color: var(--focus-color);
+}
+.header-contacts{
+  margin-left: auto;
+  align-items: center;
+  gap: 50px;
 }
 .header-contacts-items a:hover,
 .header-contacts-items a:focus{
@@ -128,6 +141,10 @@ h3 {
   letter-spacing: 0.03em;
   color: var(--text-color);
 }
+.list-working {
+  display: flex;
+  justify-content:space-between;
+}
 .work-title{
   padding-bottom: 50px;
 }
@@ -138,6 +155,11 @@ h3 {
 }
 .section-team-title{
   padding-bottom: 50px;
+}
+.section-list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .section-list-item {
   font-weight: 400;
@@ -157,10 +179,54 @@ footer{
 
   background-color: var(--background-color);
 }
+.header-second-link{
+  display: inline-block;
+  padding-bottom: 20px;
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  color: #000;
+  text-decoration: none;
+  font-family: var(--second-family);
+}
 footer a{ 
   font-weight: 400;
   font-size: 14px;
   line-height: 1,71;
   letter-spacing: 0.03em;
   color: var(--main-adress-color)
+}
+.buttons-list {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.buttons-list-items {
+  padding: 6px 22px;
+  display: flex;
+  background-color: var(--main-current-color);
+  border-radius: 4px;
+  font-family: var(--font-family);
+  letter-spacing: 0.03em;
+  line-height: 1,62;
+  font-size: 16px;
+  font-weight: 500;
+  gap: 30px;
+  column-gap: 30px;
+
+}
+.buttons-list button:hover,
+.buttons-list button:focus{
+  background-color: var(--focus-color);
+}
+.image-list-items{
+  display: flex;
+}
+.image-list {
+  display: flex;
+  flex-wrap: wrap;  
+  gap: 3px;
+  column-gap: 30px;
 }
