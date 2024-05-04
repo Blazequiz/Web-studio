@@ -30,6 +30,12 @@ h4{
   outline: 2px dashed red;
   margin: 0 auto;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  width: 370px;
+}
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -63,7 +69,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-}
+} 
 a {
   text-decoration: none;
   font-family: var(--font-family);
@@ -179,8 +185,8 @@ h3 {
 }
 .section-list{
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  gap: 30px;
 }
 .section-list-item {
   font-weight: 400;
@@ -248,23 +254,17 @@ footer a{
 .buttons-list button:focus{
   background-color: var(--focus-color);
 }
-.image-list-items{
-  display: flex;
-}
 .image-list {
   display: flex;
   flex-wrap: wrap;  
-  gap: 3px;
-  column-gap: 30px;
+  gap: 30px;
+} 
+.image-list-items{
+  display: flex;
 }
 .image-title-items {
   margin-top: 20px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-}
-.image-paragraph {
-  margin-top: 4px;
 }
