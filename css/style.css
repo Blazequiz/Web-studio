@@ -96,11 +96,15 @@ a {
   padding-bottom: 200px;
   text-align: center;
 
-  background-image:  
+  background-image: 
+  linear-gradient(
+    rgba(47, 48, 58, 0.8) 0%, 
+    rgba(130, 132, 160, 0.8) 100%
+  ), 
   url(../img/background.jpg);
+background-repeat: no-repeat;
+background-size: cover;
 
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .title {
   margin-bottom: 30px;
