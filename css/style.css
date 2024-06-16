@@ -46,6 +46,7 @@ img {
 .header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid #ececec;
 }
 .header-list {
   align-items: center;
@@ -94,17 +95,18 @@ a {
 .section-title{
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
-
+  width: 1600px;
   background-image: 
   linear-gradient(
-    rgba(47, 48, 58, 0.8) 0%, 
-    rgba(130, 132, 160, 0.8) 100%
+    rgba(47, 48, 58, 0.4) 0%, 
+    rgba(130, 132, 160, 0.4) 100%
   ), 
   url(../img/background.jpg);
 background-repeat: no-repeat;
 background-size: cover;
-
 }
 .title {
   margin-bottom: 30px;
@@ -290,9 +292,8 @@ footer a{
   flex-basis: calc(100%-180px)/6;
 }
 .portfolio-info {
-  border: 1px solid #eee;
   border-top: none;
-
+  /* box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12); */
 }
 .image-list-element {
   width: 370px;
