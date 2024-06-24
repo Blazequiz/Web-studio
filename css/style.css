@@ -92,21 +92,22 @@ a {
 .header-contacts-items a:focus{
   color: var(--focus-color);
 }
-.section-title{
+.section-title {
   padding-top: 200px;
   padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  width: 1600px;
+  width: 100%; 
   background-image: 
-  linear-gradient(
-    rgba(47, 48, 58, 0.4) 0%, 
-    rgba(130, 132, 160, 0.4) 100%
-  ), 
-  url(../img/background.jpg);
-background-repeat: no-repeat;
-background-size: cover;
+    linear-gradient(
+      rgba(47, 48, 58, 0.4) 0%, 
+      rgba(130, 132, 160, 0.4) 100%
+    ), 
+    url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
 }
 .title {
   margin-bottom: 30px;
@@ -140,19 +141,16 @@ background-size: cover;
 .main-list{
   display: flex;
   gap: 30px;
-}
-.main-list::before {
-  content: "";
-  background-color: ;
+  justify-content: center;
 }
 .main-list-title{
+  margin-top: 30px;
   margin-bottom: 10px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-
 }
 .main-list-paragraph {
   width: 270px;
@@ -172,13 +170,58 @@ h3 {
   color: var(--main-heading-color);
 
 }
-.main-list-item {
+.first-main-list-item,
+.second-main-list-item,
+.third-main-list-item,
+.fourth-main-list-item {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
   color: var(--text-color);
+/* before elemets are starting */
 }
+.first-main-list-item::before {
+    content: "";
+    display: block;
+    height: 120px;
+    background-color: #F5F4FA;
+    background-image: url(../img/first-before-element-all.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+}
+.second-main-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../img/second-before-element.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+.third-main-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../img/third-before-element.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+.fourth-main-list-item::before {
+  content: "";
+  display: block;
+  height: 120px;
+  background-color: #F5F4FA;
+  background-image: url(../img/fourth-before-element.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+/* before elements are ending */
 .list-working {
   display: flex;
   justify-content:space-between;
@@ -215,9 +258,11 @@ h3 {
 }
 .team-section-title {
   margin-top: 30px;
+  text-align: center;
 }
 .team-section-paragraph {
   margin-top: 10px;
+  text-align: center;
 }
 .footer-adress{
   font-weight: 400;
