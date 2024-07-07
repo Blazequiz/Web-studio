@@ -179,7 +179,7 @@ h3 {
   line-height: 171%;
   letter-spacing: 0.03em;
   color: var(--text-color);
-/* before elemets are starting */
+/* before elemets are started*/
 }
 .first-main-list-item::before {
     content: "";
@@ -221,7 +221,7 @@ h3 {
   background-position: center;
   border-radius: 4px;
 }
-/* before elements are ending */
+/* before elements are ended*/
 .list-working {
   display: flex;
   justify-content:space-between;
@@ -239,6 +239,8 @@ h3 {
 .second-person,
 .third-person,
 .fourth-person {
+  display: flex;
+  flex-direction: column;
   background-color: white;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
   border-radius: 0 0 4px 4px;
@@ -354,4 +356,24 @@ footer a{
   line-height: 187%;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.icons-list {
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.icons-list .icons-list-element:nth-child(n+1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  fill: #AFB1B8;
+  width: 44px;
+  height: 44px;
+  border-radius: 90px;
+  background-color: transparent;
+}
+.icons-list .icons-list-element:hover {
+  fill: #fff;
+  background-color: #2196f3;
 }
