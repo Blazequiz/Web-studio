@@ -62,6 +62,15 @@ img {
   text-decoration: none;
   font-family: var(--second-family);
 }
+.header-contacts-items {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.header-contacts-items:hover {
+  fill: #2196f3;
+  color: #2196F3;
+}
 .logo {
   color: #2196f3;
   text-decoration: none;
