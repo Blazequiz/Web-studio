@@ -248,6 +248,7 @@ h3 {
 .second-person,
 .third-person,
 .fourth-person {
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -302,8 +303,11 @@ h3 {
   background-color: #2196f3;
 }
 /* last section */
+.last-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 .last-section-title {
-  margin-top: 94px;
   margin-bottom: 50px;
   font-family: var(--font-family);
   font-weight: 700;
@@ -313,7 +317,7 @@ h3 {
   color: #212121;
 }
 .last-section-list {
-  margin-bottom: 236px;
+
   display: flex;
   justify-content: center;
   gap: 30px;
@@ -428,7 +432,6 @@ footer a{
   font-weight: 500;
   gap: 30px;
   column-gap: 30px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 .buttons-list button:hover{
   background-color: var(--focus-color);
