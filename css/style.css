@@ -241,6 +241,7 @@ h3 {
 }
 .h3-list-working-item-title {
   bottom: 0;
+  width: 180px;
   padding: 27px 107px;
   position: absolute;
   color: white;
