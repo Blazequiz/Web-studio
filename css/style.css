@@ -236,6 +236,21 @@ h3 {
   justify-content:space-between;
   flex-basis: calc((100% - 60px) / 2);
 }
+.list-working-item {
+  position: relative;
+}
+.h3-list-working-item-title {
+  bottom: 0;
+  padding: 27px 107px;
+  position: absolute;
+  color: white;
+  background: rgba(47, 48, 58, 0.8);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0
+}
 .work-title{
   padding-bottom: 50px;
 }
