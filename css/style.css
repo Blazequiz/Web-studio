@@ -236,7 +236,7 @@ h3 {
 }
 .list-working-item {
   position: relative;
-  flex-basis: calc((100% - 60px) / 2);
+  /* flex-basis: calc((100% - 60px) / 2); */
 }
 .h3-list-working-item-title {
   bottom: 0;
