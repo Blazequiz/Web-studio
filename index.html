@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="container flex">
         <nav class="header-nav flex">
@@ -60,15 +61,75 @@
       </div>
     </header>
     <main>
+    <!-- hero section -->
       <section class="section-title">
         <div class="container">
           <h1 class="title">
             ЕФЕКТИВНІ РІШЕННЯ ДЛЯ<br />
             ВАШОГО БІЗНЕСУ
           </h1>
-          <button type="button" class="button">Замовити послугу</button>
+          <button type="button" class="button" data-modal-open>Замовити послугу</button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close" data-modal-close><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="black" class="cross-svg"/>
+              </svg>
+            </button>
+            <p class="form-title"> 
+              Залиште свої дані, ми вам передзвонимо
+            </p>
+            <!-- form list -->
+            <ul class="form-list">
+              <li class="form-list-items">
+                <div class="paragraph-form-wrapper"><p>Ім'я</p></div>
+                <form class="sign_up-form">
+                  <label class="form-element">
+                    <input type="text" name="name"  class="placeholder-name">
+                  </label>
+                  </form>
+                </li>
+                   <li class="form-list-items">
+                    <div class="paragraph-form-wrapper"><p>Телефон</p></div>
+                    <form action="">
+                      <label class="form-list-items">
+                        <input type="email" name="number"  class="placeholder-number">
+                      </label>
+                     </form>
+                   </li>
+                   <li class="form-list-items">
+                    <div class="paragraph-form-wrapper"><p>Пошта</p></div>
+                    <form action="">
+                      <label class="form-element">
+                        <input type="text" name="email"  class="placeholder-email">
+                      </label>
+                    </form>
+                   </li>
+               <li class="form-list-items">
+                <div class="paragraph-form-wrapper"><p>Коментар</p></div>
+                 <form class="feedback">
+                     <label class="">
+                       <textarea
+                         name="feedback"
+                         rows="5"
+                         placeholder="Введіть текст"
+                         class="text-area"
+                         ></textarea>
+                     </label>
+                 </form>
+               </li>
+             </ul>
+             <form class="accepting-form">
+              <label>
+                <input type="checkbox" name="allow" value="accepting" checked />
+              </label>
+                <p class="last-form-paragraph">Погоджуюся з розсилкою та приймаю <a href="./" class="accepting">Умови</a></p>
+              </form>
+             <button class="submit-btn" type="submit">Відправити</button>
+            </div>
+          </div>
         </div>
       </section>
+      <!--  -->
       <section class="features section">
         <div class="container">
           <h2 hidden>Особливості</h2>
@@ -397,6 +458,7 @@
               >
             </address>
           </div>
+          <!--  -->
           <div class="second-footer-part">
             <h2 class="footer-h2">приєднуйтесь</h2>
             <ul class="footer-icons-list">
@@ -434,8 +496,25 @@
               </li>
             </ul>
           </div>
+          <div class="footer-wrapper-style">
+            <h2 class="footer-form-h2">приєднуйтесь</h2>
+            <div class="footer-scndwrapper">
+            <form action="subscribe_form" class="subscribe_form">
+              <label for="email">
+                <input type="text" name="email" placeholder="E-mail" class="footer-input">
+              </label>
+            </form>
+            <button class="footer-form-btn">   
+              Підписатися
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white" />
+              </svg>
+            </button>
+          </div>
+          </div>
         </div>
       </div>
     </footer>
+    <script src="./JS/modal.js"></script>
   </body>
 </html>
