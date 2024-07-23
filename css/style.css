@@ -563,8 +563,8 @@ footer a{
   top: 50%;
   left: 50%;
   background-color: white;
-  width: 448px;
-  height: 541px;
+  width: 528px;
+  height: 581px;
   transform: translate(-50%, -50% ) scale(1);
 }
 .backdrop.is-hidden {
@@ -586,7 +586,7 @@ footer a{
 }
 .form-title {
   margin-bottom: 12px;
-  width: 100%;
+  width: 448px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
@@ -685,4 +685,36 @@ footer a{
   line-height: 171%;
   letter-spacing: 0.03em;
   color: #757575;
+}
+.email-label,
+.phone-label,
+.name-label 
+{
+  display: flex;
+  justify-content: flex-start;
+}
+.label-title-p {
+  margin-bottom: 4px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.js-forma {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.close-btn {
+  position: relative;
+  left: 32px;
+}
+/* svg-img-in-form */
+.name-label-pos {
+  position: relative;
+}
+.contact-svg {
+  position: absolute;
+  left: 0;
 }

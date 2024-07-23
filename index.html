@@ -71,62 +71,62 @@
           <button type="button" class="button" data-modal-open>Замовити послугу</button>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-              <button class="modal-close" data-modal-close><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <button class="modal-close close-btn" data-modal-close><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11 1.10786L9.89214 0L5.5 4.39214L1.10786 0L0 1.10786L4.39214 5.5L0 9.89214L1.10786 11L5.5 6.60786L9.89214 11L11 9.89214L6.60786 5.5L11 1.10786Z" fill="black" class="cross-svg"/>
               </svg>
             </button>
-            <p class="form-title"> 
+            <h2 class="form-title"> 
               Залиште свої дані, ми вам передзвонимо
-            </p>
+            </h2>
             <!-- form list -->
-            <ul class="form-list">
-              <li class="form-list-items">
-                <div class="paragraph-form-wrapper"><p>Ім'я</p></div>
-                <form class="sign_up-form">
-                  <label class="form-element">
-                    <input type="text" name="name"  class="placeholder-name">
-                  </label>
-                  </form>
-                </li>
-                   <li class="form-list-items">
-                    <div class="paragraph-form-wrapper"><p>Телефон</p></div>
-                    <form action="">
-                      <label class="form-list-items">
-                        <input type="email" name="number"  class="placeholder-number">
-                      </label>
-                     </form>
-                   </li>
-                   <li class="form-list-items">
-                    <div class="paragraph-form-wrapper"><p>Пошта</p></div>
-                    <form action="">
-                      <label class="form-element">
-                        <input type="text" name="email"  class="placeholder-email">
-                      </label>
-                    </form>
-                   </li>
-               <li class="form-list-items">
-                <div class="paragraph-form-wrapper"><p>Коментар</p></div>
-                 <form class="feedback">
-                     <label class="">
-                       <textarea
-                         name="feedback"
-                         rows="5"
-                         placeholder="Введіть текст"
-                         class="text-area"
-                         ></textarea>
-                     </label>
-                 </form>
-               </li>
-             </ul>
-             <form class="accepting-form">
-              <label>
-                <input type="checkbox" name="allow" value="accepting" checked />
-              </label>
-                <p class="last-form-paragraph">Погоджуюся з розсилкою та приймаю <a href="./" class="accepting">Умови</a></p>
-              </form>
-             <button class="submit-btn" type="submit">Відправити</button>
-            </div>
-          </div>
+            <form class="js-forma">
+              <div>
+                <label class="name-label-pos">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_60_11800)">
+                      <path d="M9 9C10.6575 9 12 7.6575 12 6C12 4.3425 10.6575 3 9 3C7.3425 3 6 4.3425 6 6C6 7.6575 7.3425 9 9 9ZM9 10.5C6.9975 10.5 3 11.505 3 13.5V14.25C3 14.6625 3.3375 15 3.75 15H14.25C14.6625 15 15 14.6625 15 14.25V13.5C15 11.505 11.0025 10.5 9 10.5Z" fill="#212121" class="contact-svg"/>
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_60_11800">
+                        <rect width="18" height="18" fill="white" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                  <div class="name-label"><p class="label-title-p">Ім'я</p></div>
+                  <input type="text" name="name" required class="placeholder-name" />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <div class="phone-label"><p class="label-title-p">Телефон</p></div>
+                  <input type="tel" name="phone" required class="placeholder-number" />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <div class="email-label"><p class="label-title-p">Пошта</p></div>
+                  <input type="email" name="email" required class="placeholder-email" />
+                </label>
+              </div>
+              <div>
+                <label>
+                  <div class="email-label"><p class="label-title-p">Коментар</p></div>
+                  <textarea
+                    name="feedback"
+                    rows="5"
+                    placeholder="Введіть текст"
+                    class="text-area"
+                  ></textarea>
+                </label>
+              </div>
+              <div>
+                <label class="accepting-form">
+                  <input type="checkbox" name="allow" value="accepting" checked />
+                  <p>Погоджуюся з розсилкою та приймаю <a href="#" class="accepting">Умови договору</a></p>
+                </label>
+              </div>
+              <button type="submit" class="submit-btn">Відправити</button>
+            </form>            
         </div>
       </section>
       <!--  -->
