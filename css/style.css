@@ -639,6 +639,8 @@ footer a{
   font-size: 12px;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .placeholder-name {
   margin-top: 4px;
@@ -650,6 +652,8 @@ footer a{
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #bbb;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .placeholder-email {
   margin-top: 4px;
@@ -661,6 +665,8 @@ footer a{
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #bbb;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .placeholder-number {
   margin-top: 4px;
@@ -672,6 +678,8 @@ footer a{
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #bbb;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
 }
 .paragraph-form-wrapper {
   display: flex;
@@ -726,6 +734,6 @@ footer a{
 .phone-svg,
 .email-svg {
   position: absolute;
-  top: 32px;
+  top: 33px;
   left: 12px;
 }
