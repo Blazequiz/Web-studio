@@ -642,41 +642,17 @@ footer a{
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 }
-.placeholder-name {
-  margin-top: 4px;
-  width: 100%;
-  height: 40px;
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #bbb;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
-.placeholder-email {
-  margin-top: 4px;
-  width: 100%;
-  height: 40px;
-  font-family: var(--font-family);
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: -0.02em;
-  text-transform: uppercase;
-  color: #bbb;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-}
+.placeholder-name,
+.placeholder-email,
 .placeholder-number {
-  margin-top: 4px;
   width: 100%;
   height: 40px;
+  padding: 0 12px 0 36px; /* Отступ слева для иконок */
+  margin-top: 4px;
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: -0.02em;
-  text-transform: uppercase;
   color: #bbb;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -737,3 +713,4 @@ footer a{
   top: 33px;
   left: 12px;
 }
+/* chekbox */
