@@ -614,7 +614,6 @@ footer a{
   color: #fff;
 }
 .accepting-form {
-  margin-bottom: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -714,3 +713,13 @@ footer a{
   left: 12px;
 }
 /* chekbox */
+.footer-form-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+.form-input:checked{
+  background-color: #2196F3;  
+}
