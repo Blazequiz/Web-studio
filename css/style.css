@@ -91,6 +91,28 @@ a {
 .header-list-item a:focus{
   color: var(--focus-color);
 }
+/* header list item */
+.header-list-item {
+  position: relative; 
+}
+.header-list-item a::after {
+  content: '';
+  position: absolute;
+  top: 28px;
+  width: 0;
+  height: 4px; /* thickness of the underline */
+  display: block;
+  bottom: 0; /* align underline at the bottom of the link */
+  left: 0; /* start from the left */
+  background: #2196F3; /* underline color */
+  border-radius: 2px;
+}
+.header-list-item a:hover::after {
+  width: 100%; /* underline will cover the entire width of the link */
+}
+
+/* header list item are ended */
+
 .header-contacts{
   margin-left: auto;
   align-items: center;
@@ -524,6 +546,7 @@ footer a{
   flex-grow: 1;
   padding-bottom: 20px;
 }
+
 .image-list-element:hover {
   box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06), 0 1px 1px 0 rgba(0, 0, 0, 0.12);
 }
@@ -532,6 +555,35 @@ footer a{
   display: flex;
   flex-direction: column;
 }
+/* overlay */
+.box {
+  position: relative;
+  overflow: hidden;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 90%);
+  margin: 0;
+  padding: 63px 24px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateY(100%);
+  transition: transform 1000ms ease;
+}
+.box:hover .overlay {
+  transform: translateY(0%);
+}
+.overlay-paragraph {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  color: #fff;
+}
+/*  */
 .image-paragraph {
   margin-left: 24px;
   font-family: var(--font-family);
@@ -720,6 +772,6 @@ footer a{
   justify-content: center;
   gap: 7px;
 }
-.form-input:checked{
-  background-color: #2196F3;  
+.form-input:checked {
+  background-color: #2196F3;
 }
