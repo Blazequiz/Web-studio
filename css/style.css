@@ -98,7 +98,7 @@ a {
 .header-list-item a::after {
   content: '';
   position: absolute;
-  top: 28px;
+  top: 46px;
   width: 0;
   height: 4px; /* thickness of the underline */
   display: block;
