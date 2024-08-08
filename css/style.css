@@ -65,10 +65,30 @@ img {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+/* email header transition color  */
+.email-header-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.email-header-link:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196F3;
+}
+/* phone header transition color */
+.phone-header-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.phone-header-link:hover {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #2196F3;  
 }
 .header-contacts-items:hover {
   fill: #2196f3;
   color: #2196F3;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .logo {
   color: #2196f3;
@@ -79,6 +99,9 @@ ul {
   margin: 0;
   padding: 0;
 } 
+button {
+  cursor: pointer;
+}
 a {
   text-decoration: none;
   font-family: var(--font-family);
@@ -90,10 +113,13 @@ a {
 .header-list-item a:hover,
 .header-list-item a:focus{
   color: var(--focus-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
 }
 /* header list item */
 .header-list-item {
   position: relative; 
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-list-item a::after {
   content: '';
@@ -107,6 +133,7 @@ a {
   background: #2196F3; /* underline color */
   border-radius: 2px;
 }
+.header-list-item a:hover::after,
 .header-list-item a:hover::after {
   width: 100%; /* underline will cover the entire width of the link */
 }
@@ -198,7 +225,6 @@ h3 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-heading-color);
-
 }
 .first-main-list-item,
 .second-main-list-item,
@@ -335,8 +361,12 @@ h3 {
   height: 44px;
   border-radius: 90px;
   background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .icons-list .icons-list-element:hover {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
   fill: #fff;
   background-color: #2196f3;
 }
@@ -375,6 +405,7 @@ h3 {
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .last-section-list  
 .last-section-list-first-item:hover,
@@ -386,6 +417,36 @@ h3 {
 {
   fill: #2196F3;
   border: 1px solid #2196F3;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);  
+}
+/* last section elements svg`s*/
+.transform-style-svg {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*  */
+.last-section-first-svg:hover { 
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.last-section-second-svg:hover { 
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.last-section-third-svg:hover { 
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.last-section-fourth-svg:hover { 
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.last-section-fivth-svg:hover { 
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
+.last-section-sixth-svg:hover { 
+  fill: #2196F3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 footer{
   padding-top: 60px;
@@ -508,7 +569,6 @@ footer a{
 }
 .buttons-list-items {
   padding: 6px 22px;
-  display: flex;
   border: none;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -517,13 +577,17 @@ footer a{
   line-height: 1,62;
   font-size: 16px;
   font-weight: 500;
-  gap: 30px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
   column-gap: 30px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .buttons-list button:hover{
   background-color: var(--focus-color);
   color: #fff;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08), 0 3px 1px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .image-list {
   display: flex;
@@ -570,7 +634,7 @@ footer a{
   top: 0;
   left: 0;
   transform: translateY(100%);
-  transition: transform 1000ms ease;
+  transition: transform 250ms ease;
 }
 .box:hover .overlay {
   transform: translateY(0%);
@@ -707,6 +771,27 @@ footer a{
   color: #bbb;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.placeholder-name:hover,
+.placeholder-name:focus{ 
+  border: 1px solid #2196f3 ;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.placeholder-email:hover,
+.placeholder-email:focus{ 
+  border: 1px solid #2196f3 ;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+} 
+.placeholder-number:hover,
+.placeholder-number:focus{ 
+  border: 1px solid #2196f3 ;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.name-label:focus-within .contact-svg,
+.phone-label:focus-within .phone-svg,
+.email-label:focus-within .email-svg {
+  fill: #2196F3;  
 }
 .paragraph-form-wrapper {
   display: flex;
@@ -725,6 +810,7 @@ footer a{
   letter-spacing: 0.03em;
   color: #757575;
 }
+
 .email-label,
 .phone-label,
 .name-label,
@@ -771,7 +857,4 @@ footer a{
   align-items: center;
   justify-content: center;
   gap: 7px;
-}
-.form-input:checked {
-  background-color: #2196F3;
 }

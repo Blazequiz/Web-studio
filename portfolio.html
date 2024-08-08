@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="container flex">
         <nav class="header-nav flex">
@@ -35,22 +36,35 @@
           >
           <ul class="header-list flex">
             <li class="header-list-item">
-              <a href="./index.html">Студія</a>
+              <a href="./index.html" class="header-link">Студія</a>
             </li>
             <li class="header-list-item">
-              <a href="./portfolio.html">Портфоліо</a>
+              <a href="./portfolio.html" class="header-link">Портфоліо</a>
             </li>
             <li class="header-list-item">
-              <a href="#">Контакти</a>
+              <a href="#" class="header-link">Контакти</a>
             </li>
           </ul>
         </nav>
         <ul class="header-contacts flex">
           <li class="header-contacts-items">
-            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <svg width="16" height="12">
+              <use
+                href="./img/symbol-defs.svg#icon-envelope"
+                class="icon"
+              ></use>
+            </svg>
+            <a href="mailto:info@devstudio.com" class="email-header-link">info@devstudio.com</a>
           </li>
+          <!--  -->
           <li class="header-contacts-items">
-            <a href="tel:+380961111111">+38 096 111 11 11</a>
+            <svg width="16" height="12">
+              <use
+                href="./img/symbol-defs.svg#icon-smartphone"
+                class="icon"
+              ></use>
+            </svg>
+            <a href="tel:+380961111111" class="phone-header-link">+38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -62,7 +76,9 @@
           <ul class="buttons-list">
             <div>
             <li>
-              <button type="button" class="buttons-list-items"><p class="first-button">Усі</p></button>
+              <button type="button" class="buttons-list-items">
+                Усі
+              </button>
             </li>
             </div>
             <div>

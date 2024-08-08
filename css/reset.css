@@ -14,3 +14,6 @@ address {
 img {
   display: block;
 }
+input:focus, button:focus, textarea:focus, select:focus {
+  outline: none;
+}
