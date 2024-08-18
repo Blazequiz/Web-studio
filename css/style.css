@@ -529,6 +529,25 @@ footer a{
   line-height: 187%;
   letter-spacing: 0.06em;
   color: #fff;
+  animation-name: scale;
+  animation-duration: 5000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes scale{
+  0% {
+    transform: scale(1);
+    background: #2196f3;
+  }
+  50% {
+    transform: scale(1.1);
+    background: #1e88dfee;
+  }
+  100%{
+    transform: scale(1);
+    background: #2196f3;
+  }
 }
 .footer-scndwrapper {
   display: flex;
@@ -636,7 +655,7 @@ footer a{
   transform: translateY(100%);
   transition: transform 250ms ease;
 }
-.image-list-element:hover .overlay {
+.image-list-element :hover .overlay {
   transform: translateY(0%);
 }
 .overlay-paragraph {
